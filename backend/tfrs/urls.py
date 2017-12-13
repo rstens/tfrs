@@ -6,5 +6,6 @@ from . import views
 urlpatterns = [
     url(r'^$', views.blank),
     url(r'^api/', include('api.urls')),
+    url(r'^api', include('api.urls')),
     url(r'^health$', views.health),
 ]
